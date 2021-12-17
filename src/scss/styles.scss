@@ -1,0 +1,85 @@
+@import "variable.scss";
+@import "import.scss";
+@import "header.scss";
+@import "first-screen";
+@import "social";
+@import "awesome";
+@import "pricing";
+@import "customer";
+@import "axure";
+@import "contacts";
+@import "footer";
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+html {
+  font-family: "Open Sans", "Raleway", sans-serif;
+}
+
+section {
+  width: 100%;
+  padding: 100px 0;
+}
+.container {
+  max-width: 1170px;
+  margin: auto;
+  padding: 0 15px;
+  z-index: 8;
+  position: relative;
+  @media (max-width: 960px) {
+    max-width: 740px;
+  }
+  @media (max-width: 520px) {
+    max-width: 440px;
+  }
+}
+
+.title {
+  max-width: 500px;
+  font-size: 2.25rem;
+  color: $black;
+  margin: auto;
+  text-align: center;
+  font-family: "Raleway";
+  font-weight: 400;
+}
+
+.title::after {
+  content: "";
+  width: 84px;
+  height: 2px;
+  background-color: $pink;
+  display: block;
+  margin: 40px auto;
+}
+
+.description {
+  max-width: 400px;
+  margin: 0 auto 30px;
+}
+
+.description p {
+  font-size: 0.88rem;
+  color: $grey;
+  text-align: center;
+  line-height: 19px;
+  font-family: "Raleway";
+  font-weight: 300;
+}
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  border: 1px solid $white;
+  text-transform: uppercase;
+  transition: 0.2s;
+}
+.btn:hover {
+  background-color: $white;
+}
+.btn:hover a {
+  color: $black;
+}

@@ -1,0 +1,78 @@
+.customers {
+  //   padding: 50px 0;
+}
+.customers-wrap {
+  display: flex;
+  justify-content: center;
+  margin: 0 15px;
+  flex-wrap: wrap;
+}
+.customers-item {
+  width: 300px;
+  margin: 0 15px;
+  transition: 0.2s;
+  @media (max-width: 1050px) {
+    margin-bottom: 30px;
+  }
+}
+.customers-item:hover {
+  transform: translate(0, -20px);
+  box-shadow: 0 10px 20px 0 rgb(182, 152, 142);
+  border-radius: 15px;
+}
+.customers-item-text {
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-bottom: 30px;
+  background-color: $white;
+  border-radius: 10px;
+  padding: 16px;
+  position: relative;
+}
+.customers-item-text::after {
+  content: "";
+  position: absolute;
+  border: 10px solid transparent;
+  border-top: 10px solid $pink;
+  justify-content: center;
+  top: 100%;
+  left: 48px;
+  z-index: 10px;
+}
+.customers-item-text p {
+  color: $grey;
+  font-size: 1rem;
+  text-align: center;
+}
+.customers-item-manager {
+  display: flex;
+  justify-content: space-around;
+}
+.customers-item-img {
+  border-radius: 50%;
+  border: 1px solid $pink;
+  overflow: hidden;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.customers-item-img__pic {
+  width: 100%;
+}
+.customers-person {
+  width: 160px;
+  text-align: right;
+}
+.customers-person-name {
+  display: block;
+  font-family: "Open Sans";
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.customers-person-position {
+  font-family: "Ralewey";
+  font-weight: 400;
+}

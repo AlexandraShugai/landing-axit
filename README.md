@@ -1,1 +1,3 @@
-# landing-axit
+# simple-todo-list-with-compiled
+
+Technikal task

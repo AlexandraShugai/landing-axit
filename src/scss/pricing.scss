@@ -1,0 +1,59 @@
+.pricing {
+  background-color: #f5f5f5;
+}
+
+.pricing-wrap {
+  display: flex;
+  justify-content: space-around;
+  margin: 68px -15px 0;
+  flex-wrap: wrap;
+}
+.pricing-list {
+  width: 340px;
+  margin: 0 15px;
+  transition: 0.2s;
+  @media (max-width: 1110px) {
+    margin-top: 30px;
+  }
+}
+.pricing-list:hover {
+  transform: translate(0, -20px);
+  box-shadow: 0 10px 10px 0 rgb(182, 152, 142);
+}
+.prising-list-item__tarif {
+  background-color: $grey;
+  color: $white;
+  padding: 24px 0;
+  text-align: center;
+  margin-bottom: 2px;
+  font-family: "Open Sans";
+  font-weight: 700;
+}
+.prising-list-item__cost {
+  background-color: $grey;
+  color: $white;
+  padding: 40px 0;
+  text-align: center;
+  margin-bottom: 2px;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 3.5rem;
+}
+.prising-list-item__free {
+  background-color: $grey;
+  color: $white;
+  padding: 18px 0;
+  text-align: center;
+  margin-bottom: 2px;
+  font-family: "Raleway";
+  font-weight: 400;
+}
+.prising-list-item__price {
+  text-align: center;
+  margin-bottom: 2px;
+  font-family: "Raleway";
+  font-weight: 400;
+  padding: 10px 0;
+  background-color: $white;
+  color: $grey;
+}
